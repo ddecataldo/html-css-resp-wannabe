@@ -71,3 +71,53 @@ img {
 .clear {
   clear: both;
 }
+
+
+/* MEDIA QUERY */
+@media screen and (max-width: 420px) {
+
+  /* General */
+  *{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+  }
+  .row{
+    max-width: 100%;
+    margin-top: 0;
+  }
+  .row > div{
+    margin-bottom: 24px;
+  }
+
+  /* Lezioni */
+  #lezioni .row > .left, 
+  #lezioni .row > .right {
+    width: 100%;
+  }
+  #lezioni{
+    background-color: #f2f2cd;
+    padding: 20px 10px;
+  }
+
+  /* Come Funziona */
+  #steps .row > .left,
+  #steps .row > .central,
+  #steps .row > .right {
+    width: 100%;
+  }
+  #steps {
+    padding: 20px 10px;
+  }
+
+  /* Perchè Cademi  */
+  #why .row > .first, #why .row > .second, #why .row > .third {
+    margin-top: 30px;
+  }
+  #why.grey{
+    background-color: #f2f2cd;
+  }
+  #why{
+    padding: 20px 10px;
+  }
+}
